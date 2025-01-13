@@ -42,15 +42,15 @@ const uint16_t PROGMEM jklS_combo[] = {KC_J, KC_K, KC_L, KC_SCLN, COMBO_END};
 const uint16_t PROGMEM edik_combo[] = {KC_E, KC_D, KC_I, KC_K, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(qa_combo, KC_LALT),
+    COMBO(qa_combo, KC_LCTL),
     COMBO(ws_combo, KC_LGUI),
-    COMBO(ed_combo, KC_LSFT),
-    COMBO(rf_combo, KC_LCTL),
+    COMBO(ed_combo, KC_LALT),
+    COMBO(rf_combo, KC_LSFT),
 
-    COMBO(uj_combo, KC_RCTL),
-    COMBO(ik_combo, KC_RSFT),
+    COMBO(uj_combo, KC_RSFT),
+    COMBO(ik_combo, KC_RALT),
     COMBO(ol_combo, KC_RGUI),
-    COMBO(pS_combo, KC_RALT),
+    COMBO(pS_combo, KC_RCTL),
 
     COMBO(rt_combo, KC_HOME),
     COMBO(fg_combo, KC_END),
