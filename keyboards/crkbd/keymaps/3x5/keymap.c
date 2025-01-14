@@ -42,15 +42,15 @@ const uint16_t PROGMEM jklS_combo[] = {KC_J, KC_K, KC_L, KC_SCLN, COMBO_END};
 const uint16_t PROGMEM edik_combo[] = {KC_E, KC_D, KC_I, KC_K, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(qa_combo, KC_LCTL),
+    COMBO(qa_combo, KC_LALT),
     COMBO(ws_combo, KC_LGUI),
-    COMBO(ed_combo, KC_LALT),
-    COMBO(rf_combo, KC_LSFT),
+    COMBO(ed_combo, KC_LSFT),
+    COMBO(rf_combo, KC_LCTL),
 
-    COMBO(uj_combo, KC_RSFT),
-    COMBO(ik_combo, KC_RALT),
+    COMBO(uj_combo, KC_RCTL),
+    COMBO(ik_combo, KC_RSFT),
     COMBO(ol_combo, KC_RGUI),
-    COMBO(pS_combo, KC_RCTL),
+    COMBO(pS_combo, KC_RALT),
 
     COMBO(rt_combo, KC_HOME),
     COMBO(fg_combo, KC_END),
@@ -74,14 +74,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_ESC, KC_TAB, LT(1, KC_SPC),        LT(2, KC_BSPC), KC_ENT, KC_ESC
    ),
    [1] = LAYOUT_split_3x6_3(
-      KC_NO, KC_0,  KC_9,  KC_8,  KC_7,  KC_6,         KC_NO, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC,  KC_NO,
-      KC_NO, KC_1,  KC_2,  KC_3,  KC_4,  KC_5,         KC_NO, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
+      KC_NO, KC_1,  KC_2,  KC_3,  KC_4,  KC_5,         KC_NO, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC,  KC_NO,
+      KC_NO, KC_0,  KC_9,  KC_8,  KC_7,  KC_6,         KC_NO, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,
       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,        KC_NO, KC_GRV,  KC_QUOT, KC_BSLS, KC_NO,    KC_NO,
                          KC_NO, KC_NO, KC_TRNS,        MO(3), KC_NO, KC_NO
    ),
    [2] = LAYOUT_split_3x6_3(
-      KC_NO, LSFT(KC_0), LSFT(KC_9), LSFT(KC_8), LSFT(KC_7), LSFT(KC_6),        KC_NO, LSFT(KC_MINS), LSFT(KC_EQL),  LSFT(KC_LBRC), LSFT(KC_RBRC), KC_NO,
-      KC_NO, LSFT(KC_1), LSFT(KC_2), LSFT(KC_3), LSFT(KC_4), LSFT(KC_5),        KC_NO, KC_LEFT,       KC_DOWN,       KC_UP,         KC_RIGHT,      KC_NO,
+      KC_NO, LSFT(KC_1), LSFT(KC_2), LSFT(KC_3), LSFT(KC_4), LSFT(KC_5),        KC_NO, LSFT(KC_MINS), LSFT(KC_EQL),  LSFT(KC_LBRC), LSFT(KC_RBRC), KC_NO,
+      KC_NO, LSFT(KC_0), LSFT(KC_9), LSFT(KC_8), LSFT(KC_7), LSFT(KC_6),        KC_NO, KC_LEFT,       KC_DOWN,       KC_UP,         KC_RIGHT,      KC_NO,
       KC_NO, KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,             KC_NO, LSFT(KC_GRV),  LSFT(KC_QUOT), LSFT(KC_BSLS), KC_NO,         KC_NO,
                                                     KC_NO, KC_NO, MO(3),        KC_TRNS, KC_NO, KC_NO
    ),
