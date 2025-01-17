@@ -38,6 +38,8 @@ const uint16_t PROGMEM nm_combo[] = {KC_N, KC_M, COMBO_END};
 
 const uint16_t PROGMEM asdf_combo[] = {KC_A, KC_S, KC_D, KC_F, COMBO_END};
 const uint16_t PROGMEM jklS_combo[] = {KC_J, KC_K, KC_L, KC_SCLN, COMBO_END};
+const uint16_t PROGMEM qwer_combo[] = {KC_Q, KC_W, KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM uiop_combo[] = {KC_U, KC_I, KC_O, KC_P, COMBO_END};
 
 const uint16_t PROGMEM edik_combo[] = {KC_E, KC_D, KC_I, KC_K, COMBO_END};
 
@@ -62,6 +64,8 @@ combo_t key_combos[] = {
 
     COMBO(asdf_combo, KC_NO),
     COMBO(jklS_combo, KC_NO),
+    COMBO(qwer_combo, KC_NO);
+    COMBO(uiop_combo, KC_NO);
 
     COMBO(edik_combo, KC_CAPS),
 };

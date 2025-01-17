@@ -62,6 +62,8 @@ combo_t key_combos[] = {
 
     COMBO(asdf_combo, KC_NO),
     COMBO(jklS_combo, KC_NO),
+    COMBO(qwer_combo, KC_NO);
+    COMBO(uiop_combo, KC_NO);
 
     COMBO(edik_combo, KC_CAPS),
 };
