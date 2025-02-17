@@ -79,9 +79,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                          KC_NO,    KC_NO,    MO(3), /*****************/ KC_TRNS,    KC_NO,    KC_NO
    ),
    [3] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_F1, KC_F2,  KC_F3,  KC_F4, /******************/ KC_NO, KC_PSCR, KC_INS,  KC_DEL,  KC_NO, DF(4),
-      KC_NO, KC_NO, KC_F5, KC_F6,  KC_F7,  KC_F8, /******************/ KC_NO, KC_NO,   KC_CAPS, KC_NO,   KC_NO, DF(4),
-      KC_NO, KC_NO, KC_F9, KC_F10, KC_F11, KC_F12, /*****************/ KC_NO, KC_VOLD, KC_MUTE, KC_VOLU, KC_NO, DF(4),
+      KC_NO, KC_NO, KC_F1, KC_F2,  KC_F3,  KC_F4, /******************/ KC_INS, KC_PSCR, KC_CAPS, KC_RALT, KC_NO, DF(4),
+      KC_NO, KC_NO, KC_F5, KC_F6,  KC_F7,  KC_F8, /******************/ KC_DEL, KC_RCTL, KC_RSFT, KC_RGUI, KC_NO, DF(4),
+      KC_NO, KC_NO, KC_F9, KC_F10, KC_F11, KC_F12, /*****************/ KC_NO,  KC_VOLD, KC_MUTE, KC_VOLU, KC_NO, DF(4),
                       KC_NO,    KC_NO,    KC_TRNS, /*****************/ KC_TRNS,    KC_NO,    KC_NO
    ),
    [4] = LAYOUT_split_3x6_3(
