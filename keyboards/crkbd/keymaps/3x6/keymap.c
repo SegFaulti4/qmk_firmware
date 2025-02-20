@@ -55,15 +55,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                KC_LCTL,    KC_TAB,    LT(1, KC_SPC), /*****************/ LT(2, KC_BSPC),    KC_ENT,    KC_ESC
    ),
    [1] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_Q, KC_ESC,  KC_T, KC_NO, /*****************/ KC_NO, KC_0,    KC_UP,   KC_BSLS,  KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_A, KC_GRV,  KC_G, KC_NO, /*****************/ KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_Z, KC_CAPS, KC_B, KC_NO, /*****************/ KC_NO, KC_QUOT, KC_LBRC, KC_RBRC,  KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_Q, KC_ESC,  KC_T, KC_NO, /*****************/ KC_NO, KC_Y, KC_MINS, KC_P,    KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_A, KC_GRV,  KC_G, KC_NO, /*****************/ KC_NO, KC_H, KC_EQL,  KC_SCLN, KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_Z, KC_CAPS, KC_B, KC_NO, /*****************/ KC_NO, KC_N, KC_PSCR, KC_SLSH, KC_NO, KC_NO,
                    KC_NO,    KC_NO,    KC_TRNS, /*****************/ MO(3),    KC_NO,    KC_NO
    ),
    [2] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_1, KC_2, KC_3, KC_NO, /*****************/ KC_NO, KC_Y, KC_MINS, KC_P,    KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_4, KC_5, KC_6, KC_NO, /*****************/ KC_NO, KC_H, KC_EQL,  KC_SCLN, KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_7, KC_8, KC_9, KC_NO, /*****************/ KC_NO, KC_N, KC_PSCR, KC_SLSH, KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_1, KC_2, KC_3, KC_NO, /*****************/ KC_NO, KC_0,    KC_UP,   KC_BSLS,  KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_4, KC_5, KC_6, KC_NO, /*****************/ KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_7, KC_8, KC_9, KC_NO, /*****************/ KC_NO, KC_QUOT, KC_LBRC, KC_RBRC,  KC_NO, KC_NO,
                   KC_NO,    KC_NO,    MO(3), /*****************/ KC_TRNS,    KC_NO,    KC_NO
    ),
    [3] = LAYOUT_split_3x6_3(
