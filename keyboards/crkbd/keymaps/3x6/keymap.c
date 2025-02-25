@@ -71,16 +71,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                          KC_NO,    KC_NO,    MO(5), /*****************/ KC_TRNS,    KC_NO,    KC_NO
    ),
    [3] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_Y, KC_PGUP, KC_P,    KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_H, KC_PGDN, KC_BSLS, KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_N, KC_ESC,  KC_NO,   KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_Y, KC_PGUP, KC_P,          KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_H, KC_PGDN, KC_BSLS,       KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_N, KC_ESC,  OSM(MOD_RSFT), KC_NO, KC_NO,
                        KC_NO,    KC_NO,    KC_NO, /*****************/ KC_NO,    KC_NO,    KC_NO
    ),
    [4] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_Q,   KC_HOME, KC_T, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_GRV, KC_END,  KC_G, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_NO,  KC_CAPS, KC_B, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO,
-                       KC_NO,    KC_NO,    KC_NO, /*****************/ KC_NO,    KC_NO,    KC_NO
+      KC_NO, KC_NO, KC_Q,          KC_HOME, KC_T, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_GRV,        KC_END,  KC_G, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,
+      KC_NO, KC_NO, OSM(MOD_LSFT), KC_CAPS, KC_B, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO,
+                              KC_NO,    KC_NO,    KC_NO, /*****************/ KC_NO,    KC_NO,    KC_NO
    ),
    [5] = LAYOUT_split_3x6_3(
       KC_NO, KC_NO, KC_F1, KC_F2, KC_F3, KC_NO, /*****************/ KC_NO, KC_F10,  KC_F11,  KC_F12,  KC_NO, DF(6),
