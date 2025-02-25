@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_NO, KC_NO, LALT_T(KC_W), KC_E,         KC_R,         KC_NO, /*****************/ KC_NO, KC_U,         KC_I,         RALT_T(KC_O),  KC_NO,   KC_NO,
       KC_NO, KC_A,  LGUI_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_NO, /*****************/ KC_NO, RCTL_T(KC_J), RSFT_T(KC_K), RGUI_T(KC_L),  KC_SCLN, KC_NO,
       KC_NO, KC_Z,  LT(3, KC_X),  KC_C,         KC_V,         KC_NO, /*****************/ KC_NO, KC_M,         KC_COMM,      LT(4, KC_DOT), KC_SLSH, KC_NO,
-                               KC_LCTL,    KC_TAB,    LT(1, KC_SPC), /*****************/ LT(2, KC_BSPC),    KC_ENT,    KC_ESC
+                              KC_BSPC,    KC_LCTL,    LT(1, KC_SPC), /*****************/ LT(2, KC_BSPC),    KC_NO,    KC_NO
    ),
    [1] = LAYOUT_split_3x6_3(
       KC_NO, KC_NO, KC_1, KC_2, KC_3, KC_NO, /*****************/ KC_NO, RSFT(KC_MINS), KC_UP,         RSFT(KC_EQL),  KC_NO, KC_NO,
@@ -71,16 +71,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                          KC_NO,    KC_NO,    MO(5), /*****************/ KC_TRNS,    KC_NO,    KC_NO
    ),
    [3] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_Y, KC_PGUP, KC_P,          KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_H, KC_PGDN, KC_BSLS,       KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, /*****************/ KC_NO, KC_N, KC_ESC,  OSM(MOD_RSFT), KC_NO, KC_NO,
-                       KC_NO,    KC_NO,    KC_NO, /*****************/ KC_NO,    KC_NO,    KC_NO
+      KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO, /*****************/ KC_NO, KC_Y, KC_PGUP, KC_P,    KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_NO,   KC_RSFT, KC_NO, KC_NO, /*****************/ KC_NO, KC_H, KC_ENT,  KC_BSLS, KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_TRNS, KC_NO,   KC_NO, KC_NO, /*****************/ KC_NO, KC_N, KC_PGDN, KC_ESC,  KC_NO, KC_NO,
+                         KC_NO,    KC_NO,    KC_NO, /*****************/ KC_NO,    KC_NO,    KC_NO
    ),
    [4] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_Q,          KC_HOME, KC_T, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,
-      KC_NO, KC_NO, KC_GRV,        KC_END,  KC_G, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,
-      KC_NO, KC_NO, OSM(MOD_LSFT), KC_CAPS, KC_B, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO,
-                              KC_NO,    KC_NO,    KC_NO, /*****************/ KC_NO,    KC_NO,    KC_NO
+      KC_NO, KC_NO, KC_Q,    KC_HOME, KC_T, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_GRV,  KC_TAB,  KC_G, KC_NO, /*****************/ KC_NO, KC_NO, KC_RSFT, KC_NO,   KC_NO, KC_NO,
+      KC_NO, KC_NO, KC_CAPS, KC_END,  KC_B, KC_NO, /*****************/ KC_NO, KC_NO, KC_NO,   KC_TRNS, KC_NO, KC_NO,
+                        KC_NO,    KC_NO,    KC_NO, /*****************/ KC_NO,    KC_NO,    KC_NO
    ),
    [5] = LAYOUT_split_3x6_3(
       KC_NO, KC_NO, KC_F1, KC_F2, KC_F3, KC_NO, /*****************/ KC_NO, KC_F10,  KC_F11,  KC_F12,  KC_NO, DF(6),
