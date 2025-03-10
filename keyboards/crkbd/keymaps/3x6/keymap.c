@@ -55,8 +55,8 @@ combo_t key_combos[] = {
     COMBO(cv_combo, KC_SPC),
     COMBO(er_combo, KC_TAB),
 
-    COMBO(mC_combo, KC_BSPC),
-    COMBO(ui_combo, KC_ENT),
+    COMBO(ui_combo, KC_BSPC),
+    COMBO(mC_combo, KC_ENT),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [1] = LAYOUT_split_3x6_3(
       KC_NO, KC_NO, OSM(MOD_LALT), KC_NO,         KC_NO,         KC_NO, /*****************/ KC_NO, MS_WHLL, KC_UP,   MS_WHLR,  MS_WHLU, KC_NO,
       KC_NO, KC_NO, OSM(MOD_LGUI), OSM(MOD_LSFT), OSM(MOD_LCTL), KC_NO, /*****************/ KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, MS_WHLD, KC_NO,
-      KC_NO, KC_NO, KC_NO,         KC_NO,         KC_NO,         KC_NO, /*****************/ KC_NO, KC_HOME, KC_PGUP, KC_PGDN,  KC_END, KC_NO,
+      KC_NO, KC_NO, KC_NO,         KC_NO,         KC_NO,         KC_NO, /*****************/ KC_NO, KC_HOME, KC_PGUP, KC_PGDN,  KC_END,  KC_NO,
                                            KC_NO,    KC_TRNS,    KC_NO, /*****************/ KC_NO,    MO(3),    KC_NO
    ),
    [2] = LAYOUT_split_3x6_3(
