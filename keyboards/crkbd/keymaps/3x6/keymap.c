@@ -46,8 +46,8 @@ const uint16_t PROGMEM io_combo[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM CD_combo[] = {KC_COMM, KC_DOT, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(xc_combo, KC_SPC),
-    COMBO(we_combo, KC_TAB),
+    COMBO(we_combo, KC_SPC),
+    COMBO(xc_combo, KC_TAB),
 
     COMBO(io_combo, KC_BSPC),
     COMBO(CD_combo, KC_ENT),
