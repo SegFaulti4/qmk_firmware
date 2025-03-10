@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define ONESHOT_TAP_TOGGLE 2
-#define ONESHOT_TIMEOUT 1000
+#define ONESHOT_TAP_TOGGLE 3
+#define ONESHOT_TIMEOUT 2000
 #define COMBO_TERM 80
 #define TAPPING_TERM 150
 #define COMBO_ONLY_FROM_LAYER 0

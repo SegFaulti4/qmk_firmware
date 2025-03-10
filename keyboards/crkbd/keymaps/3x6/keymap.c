@@ -52,11 +52,11 @@ const uint16_t PROGMEM yu_combo[] = {KC_Y, KC_U, COMBO_END};
 const uint16_t PROGMEM nm_combo[] = {KC_N, KC_M, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(cv_combo, KC_SPC),
-    COMBO(er_combo, KC_TAB),
+    COMBO(er_combo, KC_SPC),
+    COMBO(cv_combo, KC_TAB),
 
-    COMBO(mC_combo, KC_BSPC),
-    COMBO(ui_combo, KC_ENT),
+    COMBO(ui_combo, KC_BSPC),
+    COMBO(mC_combo, KC_ENT),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [1] = LAYOUT_split_3x6_3(
       KC_NO, KC_NO, OSM(MOD_LALT), KC_NO,         KC_NO,         KC_NO, /*****************/ KC_NO, MS_WHLL, KC_UP,   MS_WHLR,  MS_WHLU, KC_NO,
       KC_NO, KC_NO, OSM(MOD_LGUI), OSM(MOD_LSFT), OSM(MOD_LCTL), KC_NO, /*****************/ KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, MS_WHLD, KC_NO,
-      KC_NO, KC_NO, KC_NO,         KC_NO,         KC_NO,         KC_NO, /*****************/ KC_NO, KC_END,  KC_PGDN, KC_PGUP,  KC_HOME, KC_NO,
+      KC_NO, KC_NO, KC_NO,         KC_NO,         KC_NO,         KC_NO, /*****************/ KC_NO, KC_HOME, KC_PGUP, KC_PGDN,  KC_END, KC_NO,
                                            KC_NO,    KC_TRNS,    KC_NO, /*****************/ KC_NO,    MO(3),    KC_NO
    ),
    [2] = LAYOUT_split_3x6_3(
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_NO, KC_NO, KC_F1, KC_F2, KC_F3, KC_NO, /*****************/ KC_NO, KC_F10, KC_F11,  KC_F12,  KC_PSCR, DF(4),
       KC_NO, KC_NO, KC_F4, KC_F5, KC_F6, KC_NO, /*****************/ KC_NO, KC_INS, KC_HOME, KC_PGUP, KC_VOLU, DF(4),
       KC_NO, KC_NO, KC_F7, KC_F8, KC_F9, KC_NO, /*****************/ KC_NO, KC_DEL, KC_END,  KC_PGDN, KC_VOLD, DF(4),
-                     KC_NO,    KC_TRNS,    KC_NO, /*****************/ KC_NO,    KC_TRNS,    KC_NO
+                   KC_NO,    KC_TRNS,    KC_NO, /*****************/ KC_NO,    KC_TRNS,    KC_NO
    ),
    [4] = LAYOUT_split_3x6_3(
       KC_T, KC_TAB,  KC_Q, KC_W, KC_E, KC_R, /*****************/ KC_Y, KC_U, KC_I,    KC_O,   KC_P,    DF(0),
