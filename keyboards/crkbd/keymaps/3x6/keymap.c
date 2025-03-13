@@ -45,12 +45,18 @@ const uint16_t PROGMEM xc_combo[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM io_combo[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM CD_combo[] = {KC_COMM, KC_DOT, COMBO_END};
 
+const uint16_t PROGMEM qw_combo[] = {KC_Q, KC_W, COMBO_END};
+const uint16_t PROGMEM zx_combo[] = {KC_Z, KC_X, COMBO_END};
+
 combo_t key_combos[] = {
     COMBO(we_combo, KC_SPC),
     COMBO(xc_combo, KC_TAB),
 
     COMBO(io_combo, KC_BSPC),
     COMBO(CD_combo, KC_ENT),
+
+    COMBO(qw_combo, KC_ESC),
+    COMBO(zx_combo, KC_CAPS),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -61,16 +67,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                        KC_NO,    OSL(1),    KC_NO, /*****************/ KC_NO,    OSL(2),    KC_NO
    ),
    [1] = LAYOUT_split_3x6_3(
-      KC_NO, KC_NO, KC_NO,         KC_NO,         OSM(MOD_LALT), KC_NO, /*****************/ KC_NO, MS_WHLL, KC_UP,   MS_WHLR,  MS_WHLU, KC_NO,
-      KC_NO, KC_NO, OSM(MOD_LGUI), OSM(MOD_LSFT), OSM(MOD_LCTL), KC_NO, /*****************/ KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, MS_WHLD, KC_NO,
-      KC_NO, KC_NO, KC_NO,         KC_NO,         KC_NO,         KC_NO, /*****************/ KC_NO, KC_HOME, KC_PGUP, KC_PGDN,  KC_END,  KC_NO,
-                                           KC_NO,    KC_TRNS,    KC_NO, /*****************/ KC_NO,    MO(3),    KC_NO
+      KC_NO, TG(1),      KC_NO,         KC_NO,         OSM(MOD_LALT), KC_NO,      /*****************/ KC_NO, MS_WHLL, KC_UP,   MS_WHLR,  TG(1),   KC_NO,
+      KC_NO, LCTL(KC_A), OSM(MOD_LGUI), OSM(MOD_LSFT), OSM(MOD_LCTL), KC_NO,      /*****************/ KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO,   KC_NO,
+      KC_NO, LCTL(KC_Z), LCTL(KC_X),    LCTL(KC_C),    LCTL(KC_V),    LCTL(KC_B), /*****************/ KC_NO, KC_END,  KC_PGDN, KC_PGUP,  KC_HOME, KC_NO,
+                                                     KC_NO,    KC_TRNS,    KC_NO, /*****************/ KC_NO,    MO(3),    KC_NO
    ),
    [2] = LAYOUT_split_3x6_3(
-      KC_NO, KC_CAPS, KC_1, KC_2, KC_3, KC_NO, /*****************/ KC_NO, OSM(MOD_RALT), KC_NO,         KC_NO,         KC_NO, KC_NO,
-      KC_NO, KC_ESC,  KC_4, KC_5, KC_6, KC_NO, /*****************/ KC_NO, OSM(MOD_RCTL), OSM(MOD_RSFT), OSM(MOD_RGUI), KC_NO, KC_NO,
-      KC_NO, KC_0,    KC_7, KC_8, KC_9, KC_NO, /*****************/ KC_NO, KC_NO,         KC_NO,         KC_NO,         KC_NO, KC_NO,
-                    KC_NO,    MO(3),    KC_NO, /*****************/ KC_NO,    KC_TRNS,    KC_NO
+      KC_NO, TG(2), KC_1, KC_2, KC_3, KC_NO, /*****************/ KC_NO, OSM(MOD_RALT), KC_NO,         KC_NO,         TG(2), KC_NO,
+      KC_NO, KC_NO, KC_4, KC_5, KC_6, KC_NO, /*****************/ KC_NO, OSM(MOD_RCTL), OSM(MOD_RSFT), OSM(MOD_RGUI), KC_NO, KC_NO,
+      KC_NO, KC_0,  KC_7, KC_8, KC_9, KC_NO, /*****************/ KC_NO, KC_NO,         KC_NO,         KC_NO,         KC_NO, KC_NO,
+                  KC_NO,    MO(3),    KC_NO, /*****************/ KC_NO,    KC_TRNS,    KC_NO
    ),
    [3] = LAYOUT_split_3x6_3(
       KC_NO, KC_NO, KC_F1, KC_F2, KC_F3, KC_NO, /*****************/ KC_NO, KC_F10, KC_F11,  KC_F12,  KC_PSCR, DF(4),
