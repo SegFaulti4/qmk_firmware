@@ -1,6 +1,6 @@
 #pragma once
 
-#define COMBO_TERM 75
+#define COMBO_TERM 100
 #define TAPPING_TOGGLE 2
 #define TAPPING_TERM 280
 #define QUICK_TAP_TERM 175
